@@ -1,0 +1,11 @@
+<section class="container mt-5 skills-section fade-in" id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="row mt-4">
+    <div class="col-6 col-md-4 col-lg-3 mb-4" *ngFor="let skill of skills">
+      <div class="skill-card shadow-sm p-3 rounded text-center h-100">
+        <img [src]="skill.icon" alt="{{skill.name}}" class="mb-2" width="40" height="40">
+        <h6>{{ skill.name }}</h6>
+      </div>
+    </div>
+  </div>
+</section>

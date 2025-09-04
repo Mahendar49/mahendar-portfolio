@@ -1,0 +1,22 @@
+<section class="container mt-5 contact-section fade-in" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+
+  <form (submit)="sendEmail($event)" #contactForm="ngForm" class="mt-4">
+    <div class="mb-3">
+      <label for="from_name" class="form-label">Name</label>
+      <input name="from_name" [(ngModel)]="form.name" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="reply_to" class="form-label">Email</label>
+      <input name="reply_to" type="email" [(ngModel)]="form.email" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea name="message" rows="4" [(ngModel)]="form.message" class="form-control" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Send Message</button>
+  </form>
+</section>

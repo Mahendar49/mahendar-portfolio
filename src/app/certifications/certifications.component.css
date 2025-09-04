@@ -1,0 +1,33 @@
+.certifications-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.cert-item {
+  border-left: 3px solid #28a745;
+  padding-left: 15px;
+  margin-left: 10px;
+}
+
+/* Section title style */
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 3px solid #007bff;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Reuse fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
